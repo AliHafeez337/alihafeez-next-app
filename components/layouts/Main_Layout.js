@@ -55,7 +55,7 @@ function MainLayout(props) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <strong>Let's be friends.</strong>
+            <strong>Let&apos;s be friends.</strong>
           </a>
         </div>
       </div>
