@@ -78,8 +78,17 @@
   color: rgb(var(--foreground-rgb));
 }
 
+.headerFooter a h4 {
+  color: rgb(var(--foreground-rgb));
+}
+
 .headerFooter p {
   text-align: center;
+  color: rgb(var(--foreground-rgb));
+}
+
+.headerFooter a strong {
+  color: rgb(var(--foreground-rgb));
 }
 
 /* Mobile */
