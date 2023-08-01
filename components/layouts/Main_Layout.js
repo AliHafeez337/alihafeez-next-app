@@ -38,7 +38,7 @@ function MainLayout(props) {
         </div>
         <div className={`${styles.footer} ${dancing_script.className}`}>
           <a
-            href='https://drive.google.com/file/d/1Yo2gdHamYEfdudt4ujCK1ltDED-qzE6E/view?usp=sharing'
+            href='https://drive.google.com/file/d/105hXsYN6ZNXwth7KBwe2RQSMYhLWTtT_/view'
             target="_blank"
             rel="noopener"
             className={roboto_mono.className}
