@@ -51,7 +51,8 @@ function MainLayout(props) {
             &nbsp;
           </p>
           <a
-            href="https://join.skype.com/invite/yNc8wg7iVj3X"
+            // href="https://join.skype.com/invite/yNc8wg7iVj3X"
+            href="https://wa.me/+923048737860"
             target="_blank"
             rel="noopener noreferrer"
           >
