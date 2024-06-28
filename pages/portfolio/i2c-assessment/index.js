@@ -28,4 +28,12 @@ function i2cApp() {
   )
 }
 
+export function getStaticProps() {
+  return {
+    props: {
+      app: 'i2c-assessment'
+    }
+  }
+}
+
 export default i2cApp;

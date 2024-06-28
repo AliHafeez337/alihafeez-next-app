@@ -16,7 +16,7 @@ const dancing_script = Dancing_Script({
 })
 
 function MainLayout(props) {
-  const app = props.children?.type.name ?? "Home";
+  const app = props.children?.props?.app ?? "Home";
   console.log('app', app);
   
   return (
