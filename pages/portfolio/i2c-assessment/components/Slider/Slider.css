@@ -1,0 +1,19 @@
+
+.i2c-app .slider {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+}
+
+.i2c-app .slides {
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.i2c-app .slider button {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}

@@ -1,0 +1,56 @@
+.i2c-app .registration.card {
+  padding: 20px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.i2c-app .registration .button {
+  margin: 20px;
+}
+
+.i2c-app .form {
+  width: 100%;
+}
+
+.i2c-app .form .control {
+  margin: 20px;
+}
+
+.i2c-app .form p {
+  color: red;
+}
+
+.i2c-app .form p.success {
+  color: green;
+}
+
+.i2c-app .control label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.i2c-app .control label span {
+  color: red;
+  font-size: 1rem;
+}
+
+.i2c-app .control input {
+  width: calc(100% - 32px);
+  outline: none;
+  margin-top: 5px;
+  padding: 0px 16px;
+  gap: 10px;
+
+  height: 51px;
+
+  background: #f9faff;
+  border: 1px solid #dee6ff;
+  border-radius: 5px;
+}
+
+.i2c-app .control .error {
+  margin: 5px auto;
+}

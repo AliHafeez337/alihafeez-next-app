@@ -1,0 +1,17 @@
+.i2c-app .card-content {
+  display: flex;
+}
+
+.i2c-app .card-content > * {
+  margin: 20px;
+}
+
+.i2c-app .card-img {
+  display: flex;
+  align-items: center;
+}
+
+.i2c-app .card-name {
+  margin-bottom: 10px;
+  font-weight: bold;
+}

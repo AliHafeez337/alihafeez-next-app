@@ -1,0 +1,14 @@
+
+.i2c-app .app-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.i2c-app .app-header ul {
+  display: inline;
+}
+
+.i2c-app .app-header ul li {
+  display: inline;
+  margin: auto 0.7rem;
+}

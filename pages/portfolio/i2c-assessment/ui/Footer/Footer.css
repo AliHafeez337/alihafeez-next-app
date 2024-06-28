@@ -1,0 +1,15 @@
+.i2c-app .app-footer {
+  margin-top: 0px;
+
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 18px;
+
+  color: #515151;
+
+  mix-blend-mode: normal;
+}
+
+.i2c-app .app-footer p {
+  text-align: left;
+}

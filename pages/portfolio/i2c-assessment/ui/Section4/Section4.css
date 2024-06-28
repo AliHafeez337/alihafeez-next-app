@@ -1,0 +1,20 @@
+.i2c-app .app-section4 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.i2c-app .app-section4 > * {
+  justify-self: center;
+}
+
+.i2c-app .section4-img {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+@media screen and (max-width: 1000px) {
+  .i2c-app .app-section4 {
+    grid-template-columns: 100%;
+  }
+}

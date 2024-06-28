@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 100vh;
   background-image: radial-gradient(
     farthest-corner at 50%,
     rgb(50, 50, 50) 0%,
@@ -11,8 +10,6 @@
 }
 
 .headerFooter {
-  height: 100vh;
-  position: absolute;
   display: inherit;
   justify-content: inherit;
   align-items: inherit;
@@ -90,6 +87,15 @@
 
 .headerFooter a strong {
   color: rgb(var(--foreground-rgb));
+}
+
+.homeApp {
+  min-height: 100vh;
+}
+
+.homeAppHeaderFooter {
+  height: 100vh;
+  position: absolute;
 }
 
 /* Mobile */

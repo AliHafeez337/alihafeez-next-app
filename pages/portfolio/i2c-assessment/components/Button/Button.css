@@ -1,0 +1,25 @@
+.i2c-app .button {
+  /* Frame 70 */
+
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px 32px;
+  gap: 10px;
+
+  width: 150px;
+  height: 51px;
+
+  background-color: #46b0e6;
+  border: 1px solid #46b0e6;
+  box-shadow: 0px 10px 40px rgba(70, 176, 230, 0.7);
+  border-radius: 40px;
+
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+  cursor: pointer;
+}

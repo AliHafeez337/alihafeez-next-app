@@ -1,0 +1,32 @@
+.i2c-app .card {
+  /* Frame 71 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+
+  /* width: 577px; */
+
+  background: #FFFFFF;
+  box-shadow: 0px 24px 24px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(2px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 10px;
+
+  margin: 20px;
+}
+
+.i2c-app .people .card:last-of-type {
+  background: linear-gradient(
+    180deg,
+    #f6fbf8 0%,
+    #f6fbf8 0.01%,
+    rgba(246, 251, 248, 0) 100%
+  );
+  backdrop-filter: blur(2px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 10px;
+  box-shadow: none;
+}
