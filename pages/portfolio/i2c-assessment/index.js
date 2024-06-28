@@ -1,13 +1,13 @@
 
 // import './App.css';
-import Background from './ui/Background/Background';
-import Header from './ui/Header/Header';
-import Section1 from './ui/Section1/Section1';
-import Section2 from './ui/Section2/Section2';
-import Section3 from './ui/Section3/Section3';
-import Section4 from './ui/Section4/Section4';
-import Divider from './components/Divider/Divider';
-import Footer from './ui/Footer/Footer';
+import Background from '../../../components/i2c-assessment/ui/Background/Background';
+import Header from '../../../components/i2c-assessment/ui/Header/Header';
+import Section1 from '../../../components/i2c-assessment/ui/Section1/Section1';
+import Section2 from '../../../components/i2c-assessment/ui/Section2/Section2';
+import Section3 from '../../../components/i2c-assessment/ui/Section3/Section3';
+import Section4 from '../../../components/i2c-assessment/ui/Section4/Section4';
+import Divider from '../../../components/i2c-assessment/components/Divider/Divider';
+import Footer from '../../../components/i2c-assessment/ui/Footer/Footer';
 
 function i2cApp() {
   const header1 = ['About us', 'Registration', 'Careers']
