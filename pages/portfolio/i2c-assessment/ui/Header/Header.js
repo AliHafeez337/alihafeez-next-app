@@ -3,7 +3,7 @@ import logo from '../../assets/logo.svg';
 import Button from '../../components/Button/Button'
 import Image from 'next/image';
 
-function Header({data, style}) {
+function Header({ data = [], style }) {
 
   return (
     <header className='app-header' style={style}>

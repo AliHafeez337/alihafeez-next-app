@@ -5,7 +5,7 @@ import { useMemo, useState } from 'react';
 import Button from '../Button/Button';
 import Image from 'next/image';
 
-function Slider({ data }) {
+function Slider({ data = [] }) {
   const [startIdx, setStartIdx] = useState(0);
 
   const arrangedData = useMemo(
