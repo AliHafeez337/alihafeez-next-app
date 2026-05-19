@@ -1,0 +1,113 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.hero {
+  .name {
+    position: absolute;
+    left: clamp(1.5rem, 6vw, 4rem);
+    top: 38%;
+    font-size: clamp(2.5rem, 7vw, 5rem);
+    font-weight: 900;
+    color: #2d2a24;
+    line-height: 1.05;
+    max-width: 14ch;
+  }
+
+  .badge {
+    position: absolute;
+    left: clamp(1.5rem, 6vw, 4rem);
+    top: calc(38% + 5.5rem);
+    display: inline-block;
+    padding: 0.35rem 0.9rem;
+    background: #1e3a5f;
+    color: #fff;
+    font-family: var(--font-mono, monospace);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    transform: rotate(-2deg);
+  }
+
+  .scrollHint {
+    position: absolute;
+    bottom: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.35rem;
+    color: #666;
+    font-family: var(--font-mono, monospace);
+    font-size: 0.7rem;
+    animation: bob 2s ease-in-out infinite;
+  }
+}
+
+@keyframes bob {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(8px);
+  }
+}
+
+.about {
+  pointer-events: none;
+
+  .tooltip {
+    position: absolute;
+    padding: 1rem 1.15rem;
+    background: rgba(10, 30, 60, 0.75);
+    border: 1px solid rgba(79, 195, 247, 0.5);
+    border-radius: 8px;
+    color: #e3f2fd;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    backdrop-filter: blur(8px);
+    pointer-events: auto;
+
+    strong {
+      display: block;
+      font-size: 1.1rem;
+      margin-bottom: 0.35rem;
+    }
+
+    ul {
+      margin-top: 0.5rem;
+      padding-left: 1.1rem;
+      font-family: var(--font-mono, monospace);
+      font-size: 0.75rem;
+    }
+
+    li {
+      margin-bottom: 0.25rem;
+    }
+  }
+
+  .loc {
+    font-size: 0.8rem;
+    opacity: 0.85;
+  }
+
+  .scan {
+    display: block;
+    margin-top: 0.5rem;
+    font-family: var(--font-mono, monospace);
+    font-size: 0.7rem;
+    color: #4fc3f7;
+  }
+}

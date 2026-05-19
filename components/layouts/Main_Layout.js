@@ -17,8 +17,6 @@ const dancing_script = Dancing_Script({
 
 function MainLayout(props) {
   const app = props.children?.props?.app ?? "Home";
-  console.log('app', app);
-  
   return (
     <>
       <main className={`${styles.main} ${app === "Home" ? styles.homeApp : ""} ${roboto_mono.className}`}>
