@@ -1,0 +1,180 @@
+.:
+total 243
+drwxr-xr-x 1 Ali Hafeez 197609      0 May 19 12:36 components/
+drwxr-xr-x 1 Ali Hafeez 197609      0 May 19 12:37 Docs/
+-rw-r--r-- 1 Ali Hafeez 197609     80 May 19 12:36 jsconfig.json
+-rw-r--r-- 1 Ali Hafeez 197609    124 May 19 12:36 next.config.js
+-rw-r--r-- 1 Ali Hafeez 197609    397 May 19 12:36 package.json
+-rw-r--r-- 1 Ali Hafeez 197609 234070 May 19 12:36 package-lock.json
+drwxr-xr-x 1 Ali Hafeez 197609      0 May 19 12:36 pages/
+drwxr-xr-x 1 Ali Hafeez 197609      0 May 19 12:36 public/
+-rw-r--r-- 1 Ali Hafeez 197609   1796 May 19 12:36 README.md
+drwxr-xr-x 1 Ali Hafeez 197609      0 May 19 12:36 static/
+drwxr-xr-x 1 Ali Hafeez 197609      0 May 19 12:36 styles/
+
+./components:
+total 0
+drwxr-xr-x 1 Ali Hafeez 197609 0 May 19 12:36 i2c-assessment/
+drwxr-xr-x 1 Ali Hafeez 197609 0 May 19 12:36 layouts/
+drwxr-xr-x 1 Ali Hafeez 197609 0 May 19 12:36 navbars/
+
+./components/i2c-assessment:
+total 8
+drwxr-xr-x 1 Ali Hafeez 197609 0 May 19 12:36 assets/
+drwxr-xr-x 1 Ali Hafeez 197609 0 May 19 12:36 components/
+drwxr-xr-x 1 Ali Hafeez 197609 0 May 19 12:36 ui/
+
+./components/i2c-assessment/assets:
+total 4552
+-rw-r--r-- 1 Ali Hafeez 197609     238 May 19 12:36 arrowLeft.svg
+-rw-r--r-- 1 Ali Hafeez 197609     236 May 19 12:36 arrowRight.svg
+-rw-r--r-- 1 Ali Hafeez 197609    1848 May 19 12:36 background2.svg
+-rw-r--r-- 1 Ali Hafeez 197609  666183 May 19 12:36 investment.svg
+-rw-r--r-- 1 Ali Hafeez 197609    6329 May 19 12:36 logo.svg
+-rw-r--r-- 1 Ali Hafeez 197609    6593 May 19 12:36 microsoft.svg
+-rw-r--r-- 1 Ali Hafeez 197609 1081254 May 19 12:36 more.svg
+-rw-r--r-- 1 Ali Hafeez 197609    9793 May 19 12:36 ola.svg
+-rw-r--r-- 1 Ali Hafeez 197609  175357 May 19 12:36 person0.svg
+-rw-r--r-- 1 Ali Hafeez 197609  158531 May 19 12:36 person1.svg
+-rw-r--r-- 1 Ali Hafeez 197609   52876 May 19 12:36 person2.svg
+-rw-r--r-- 1 Ali Hafeez 197609  411212 May 19 12:36 registration.svg
+-rw-r--r-- 1 Ali Hafeez 197609 1040741 May 19 12:36 reviews.svg
+-rw-r--r-- 1 Ali Hafeez 197609 1021978 May 19 12:36 support.svg
+-rw-r--r-- 1 Ali Hafeez 197609    1106 May 19 12:36 twitter.svg
+-rw-r--r-- 1 Ali Hafeez 197609     267 May 19 12:36 underline.svg
+-rw-r--r-- 1 Ali Hafeez 197609     267 May 19 12:36 underline2.svg
+
+./components/i2c-assessment/components:
+total 0
+drwxr-xr-x 1 Ali Hafeez 197609 0 May 19 12:36 Button/
+drwxr-xr-x 1 Ali Hafeez 197609 0 May 19 12:36 Card/
+drwxr-xr-x 1 Ali Hafeez 197609 0 May 19 12:36 CardContent/
+drwxr-xr-x 1 Ali Hafeez 197609 0 May 19 12:36 Divider/
+drwxr-xr-x 1 Ali Hafeez 197609 0 May 19 12:36 Registration/
+drwxr-xr-x 1 Ali Hafeez 197609 0 May 19 12:36 Slider/
+
+./components/i2c-assessment/components/Button:
+total 2
+-rw-r--r-- 1 Ali Hafeez 197609 458 May 19 12:36 Button.css
+-rw-r--r-- 1 Ali Hafeez 197609 226 May 19 12:36 Button.js
+
+./components/i2c-assessment/components/Card:
+total 2
+-rw-r--r-- 1 Ali Hafeez 197609 676 May 19 12:36 Card.css
+-rw-r--r-- 1 Ali Hafeez 197609 186 May 19 12:36 Card.js
+
+./components/i2c-assessment/components/CardContent:
+total 2
+-rw-r--r-- 1 Ali Hafeez 197609 242 May 19 12:36 CardContent.css
+-rw-r--r-- 1 Ali Hafeez 197609 458 May 19 12:36 CardContent.js
+
+./components/i2c-assessment/components/Divider:
+total 2
+-rw-r--r-- 1 Ali Hafeez 197609  75 May 19 12:36 Divider.css
+-rw-r--r-- 1 Ali Hafeez 197609 134 May 19 12:36 Divider.js
+
+./components/i2c-assessment/components/Registration:
+total 8
+-rw-r--r-- 1 Ali Hafeez 197609  826 May 19 12:36 Registration.css
+-rw-r--r-- 1 Ali Hafeez 197609 3161 May 19 12:36 Registration.js
+
+./components/i2c-assessment/components/Slider:
+total 5
+-rw-r--r-- 1 Ali Hafeez 197609  299 May 19 12:36 Slider.css
+-rw-r--r-- 1 Ali Hafeez 197609 1330 May 19 12:36 Slider.js
+
+./components/i2c-assessment/ui:
+total 0
+drwxr-xr-x 1 Ali Hafeez 197609 0 May 19 12:36 Background/
+drwxr-xr-x 1 Ali Hafeez 197609 0 May 19 12:36 Footer/
+drwxr-xr-x 1 Ali Hafeez 197609 0 May 19 12:36 Header/
+drwxr-xr-x 1 Ali Hafeez 197609 0 May 19 12:36 Section1/
+drwxr-xr-x 1 Ali Hafeez 197609 0 May 19 12:36 Section2/
+drwxr-xr-x 1 Ali Hafeez 197609 0 May 19 12:36 Section3/
+drwxr-xr-x 1 Ali Hafeez 197609 0 May 19 12:36 Section4/
+
+./components/i2c-assessment/ui/Background:
+total 5
+-rw-r--r-- 1 Ali Hafeez 197609 2250 May 19 12:36 Background.css
+-rw-r--r-- 1 Ali Hafeez 197609  687 May 19 12:36 Background.js
+
+./components/i2c-assessment/ui/Footer:
+total 2
+-rw-r--r-- 1 Ali Hafeez 197609 214 May 19 12:36 Footer.css
+-rw-r--r-- 1 Ali Hafeez 197609 210 May 19 12:36 Footer.js
+
+./components/i2c-assessment/ui/Header:
+total 2
+-rw-r--r-- 1 Ali Hafeez 197609 211 May 19 12:36 Header.css
+-rw-r--r-- 1 Ali Hafeez 197609 509 May 19 12:36 Header.js
+
+./components/i2c-assessment/ui/Section1:
+total 5
+-rw-r--r-- 1 Ali Hafeez 197609  357 May 19 12:36 Section1.css
+-rw-r--r-- 1 Ali Hafeez 197609 1914 May 19 12:36 Section1.js
+
+./components/i2c-assessment/ui/Section2:
+total 5
+-rw-r--r-- 1 Ali Hafeez 197609 136 May 19 12:36 Section2.css
+-rw-r--r-- 1 Ali Hafeez 197609 985 May 19 12:36 Section2.js
+
+./components/i2c-assessment/ui/Section3:
+total 5
+-rw-r--r-- 1 Ali Hafeez 197609 229 May 19 12:36 Section3.css
+-rw-r--r-- 1 Ali Hafeez 197609 871 May 19 12:36 Section3.js
+
+./components/i2c-assessment/ui/Section4:
+total 2
+-rw-r--r-- 1 Ali Hafeez 197609 351 May 19 12:36 Section4.css
+-rw-r--r-- 1 Ali Hafeez 197609 474 May 19 12:36 Section4.js
+
+./components/layouts:
+total 8
+-rw-r--r-- 1 Ali Hafeez 197609 2323 May 19 12:36 Main_Layout.js
+-rw-r--r-- 1 Ali Hafeez 197609 2062 May 19 12:36 Main_Layout.module.css
+
+./components/navbars:
+total 2
+-rw-r--r-- 1 Ali Hafeez 197609 450 May 19 12:36 Main_Navbar.js
+-rw-r--r-- 1 Ali Hafeez 197609 147 May 19 12:36 Main_Navbar.module.css
+
+./Docs:
+total 0
+-rw-r--r-- 1 Ali Hafeez 197609 0 May 19 12:37 Files.txt
+
+./pages:
+total 6
+-rw-r--r-- 1 Ali Hafeez 197609 1139 May 19 12:36 _app.js
+-rw-r--r-- 1 Ali Hafeez 197609  598 May 19 12:36 _document.js
+-rw-r--r-- 1 Ali Hafeez 197609  349 May 19 12:36 index.js
+drwxr-xr-x 1 Ali Hafeez 197609    0 May 19 12:36 portfolio/
+
+./pages/portfolio:
+total 0
+drwxr-xr-x 1 Ali Hafeez 197609 0 May 19 12:36 i2c-assessment/
+
+./pages/portfolio/i2c-assessment:
+total 8
+-rw-r--r-- 1 Ali Hafeez 197609 1262 May 19 12:36 App.css
+-rw-r--r-- 1 Ali Hafeez 197609 1320 May 19 12:36 index.js
+
+./public:
+total 657
+-rw-r--r-- 1 Ali Hafeez 197609  25931 May 19 12:36 favicon.ico
+-rw-r--r-- 1 Ali Hafeez 197609 638943 May 19 12:36 MAS_5458-nbg1.png
+-rw-r--r-- 1 Ali Hafeez 197609   1375 May 19 12:36 next.svg
+-rw-r--r-- 1 Ali Hafeez 197609    629 May 19 12:36 vercel.svg
+
+./static:
+total 125
+-rw-r--r-- 1 Ali Hafeez 197609 18384 May 19 12:36 android-chrome-192x192.png
+-rw-r--r-- 1 Ali Hafeez 197609 57458 May 19 12:36 android-chrome-512x512.png
+-rw-r--r-- 1 Ali Hafeez 197609 16403 May 19 12:36 apple-touch-icon.png
+-rw-r--r-- 1 Ali Hafeez 197609 15406 May 19 12:36 favicon.ico
+-rw-r--r-- 1 Ali Hafeez 197609   783 May 19 12:36 favicon-16x16.png
+-rw-r--r-- 1 Ali Hafeez 197609  1920 May 19 12:36 favicon-32x32.png
+-rw-r--r-- 1 Ali Hafeez 197609   263 May 19 12:36 site.webmanifest
+
+./styles:
+total 4
+-rw-r--r-- 1 Ali Hafeez 197609 2384 May 19 12:36 globals.css
