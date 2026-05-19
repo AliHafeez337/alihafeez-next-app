@@ -13,8 +13,17 @@ import '@/components/i2c-assessment/ui/Section1/Section1.css';
 import '@/components/i2c-assessment/ui/Section2/Section2.css';
 import '@/components/i2c-assessment/ui/Section3/Section3.css';
 import '@/components/i2c-assessment/ui/Section4/Section4.css';
-import MainLayout from '@/components/layouts/Main_Layout'
+import MainLayout from '@/components/layouts/Main_Layout';
+import KoalendarScripts from '@/components/koalendar/KoalendarScripts';
+import { siteFont } from '@/lib/siteFont';
 
 export default function App({ Component, pageProps }) {
-  return <MainLayout><Component {...pageProps} /></MainLayout>
+  return (
+    <div className={siteFont.className}>
+      <KoalendarScripts />
+      <MainLayout>
+        <Component {...pageProps} />
+      </MainLayout>
+    </div>
+  );
 }

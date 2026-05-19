@@ -52,41 +52,68 @@
 .content {
   padding: 2.5rem 0 1rem 0;
   width: 100%;
+  max-width: 100%;
   display: flex;
   justify-content: center;
 }
 
 .content div {
-  width: var(--width);
+  width: 100%;
+  max-width: 100%;
   display: flex;
   justify-content: center;
 }
 
 .footer {
-  padding: 0.5rem;
-  display: flex;
-}
-
-.headerFooter a {
+  padding: 0.65rem 1rem;
   display: flex;
   justify-content: center;
+  width: 100%;
+}
+
+.siteTitle {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: inherit;
+}
+
+.footerNav {
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 0.5rem;
-  text-align: center;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  font-size: 0.85rem;
+  font-family: inherit;
+}
+
+.footerLink {
+  font-family: inherit !important;
+  font-size: inherit;
+  font-weight: 400;
+  line-height: 1.4;
+  text-decoration: none;
   color: rgb(var(--foreground-rgb));
 }
 
-.headerFooter a h4 {
-  color: rgb(var(--foreground-rgb));
+.footerLinkAccent {
+  color: #ffd166;
 }
 
-.headerFooter p {
-  text-align: center;
-  color: rgb(var(--foreground-rgb));
+/* Koalendar widget may inject its own font on the anchor */
+.footerNav a[data-koalendar-widget] {
+  font-family: inherit !important;
+  font-size: inherit !important;
+  font-weight: 400 !important;
 }
 
-.headerFooter a strong {
-  color: rgb(var(--foreground-rgb));
+.footerSep {
+  color: rgba(var(--foreground-rgb), 0.45);
+  user-select: none;
+  padding: 0 0.15rem;
+  font-family: inherit;
 }
 
 .homeApp {
@@ -96,9 +123,32 @@
 .homeAppHeaderFooter {
   height: 100vh;
   position: absolute;
+  left: 0;
+  top: 0;
+  /* Keep header/footer centered over photo column, not under chat panel */
+  width: calc(100% - min(38vw, 420px));
+  min-width: 0;
+  max-width: 100%;
+  pointer-events: none;
+}
+
+.homeAppHeaderFooter .header,
+.homeAppHeaderFooter .footer {
+  pointer-events: auto;
+}
+
+.homeAppHeaderFooter .header div {
+  width: 100%;
+  max-width: var(--width);
 }
 
 /* Mobile */
+@media (max-width: 900px) {
+  .homeAppHeaderFooter {
+    width: 100%;
+  }
+}
+
 @media (max-width: 700px) {
   .header div {
     width: var(--width-mobile);
@@ -108,5 +158,14 @@
 
   .content div {
     width: var(--width-mobile);
+  }
+
+  .footerNav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .footerSep {
+    display: none;
   }
 }
