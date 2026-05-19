@@ -9,7 +9,7 @@
 
 ## 1. Executive summary
 
-You want a **right-side chat panel** on your existing single-page portfolio (photo left, chat right) where **Ali speaks in first person** (“Hi, I am Ali. Ask me anything”), answers questions **only about you** using RAG over your docs, and stays **secure and cheap**—no Pushover, no Hugging Face, **no outbound emails to you** unless the visitor explicitly wants to email you.
+You want a **right-side chat panel** on your existing single-page portfolio (photo left, chat right) where **Ali speaks in first person** (“Hi, I am Ali. Ask anything about me”), answers questions **only about you** using RAG over your docs, and stays **secure and cheap**—no Pushover, no Hugging Face, **no outbound emails to you** unless the visitor explicitly wants to email you.
 
 A dedicated **`requestGate` security module runs before every LLM call**: short messages only, blocks code/regex-style input and off-topic questions, then rate limits. Unknown answers are handled **in the chat** (with contact CTAs if the user keeps insisting)—not emailed to you.
 
@@ -81,7 +81,7 @@ One PNG business card (not used for RAG).
 ### 3.1 Goals
 
 1. **65/35 desktop split:** photo left, chat right.
-2. **First-person Ali persona:** opening line **“Hi, I am Ali. Ask me anything.”** (not “Ask Ali”).
+2. **First-person Ali persona:** opening line **“Hi, I am Ali. Ask anything about me.”** (not “Ask Ali”).
 3. **Mobile:** floating **AI-style chat icon** (bottom corner) → instant-message sheet; feels like IM.
 4. **RAG** over `Me/*.{md,txt}` (excluding duplicate Journey file).
 5. **Security gate before API/LLM** — mandatory module (§9).
@@ -128,7 +128,7 @@ One PNG business card (not used for RAG).
 - Full-screen photo preserved.
 - **Fixed FAB** bottom-right: chat bubble icon + small “AI” or pulse dot (like messenger apps).
 - Tap → **bottom sheet** (~85vh) with same chat UI, drag handle, blur backdrop.
-- Label optional on long-press: “Ask me anything”.
+- Label optional on long-press: “Ask anything about me”.
 - Does **not** use stacked layout by default.
 
 ### 4.3 Visual design
@@ -520,7 +520,7 @@ npm run build
 |---|----------|-------------|
 | 1 | Desktop split | **65/35** |
 | 2 | Mobile | **FAB + bottom sheet (IM style)** |
-| 3 | Chat title | **“Hi, I am Ali. Ask me anything.”** |
+| 3 | Chat title | **“Hi, I am Ali. Ask anything about me.”** |
 | 4 | WhatsApp | **`+923125925295`** |
 | 5 | Email to you | **Only via visitor `mailto` when they ask** |
 | 6 | Resend | **Not used in MVP** |
@@ -537,7 +537,7 @@ npm run build
 - [x] WhatsApp `+923125925295`
 - [x] No proactive emails; mailto when user asks
 - [x] `requestGate` before API
-- [x] “Hi, I am Ali. Ask me anything.”
+- [x] “Hi, I am Ali. Ask anything about me.”
 - [x] Mobile chat FAB
 - [x] Gemini + Groq; no Resend MVP
 - [x] Remove alihafeez.com
