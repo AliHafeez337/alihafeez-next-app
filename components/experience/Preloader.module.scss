@@ -1,0 +1,65 @@
+.preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f5f0e8;
+  color: #2d2a24;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.name {
+  position: absolute;
+  left: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: clamp(3rem, 12vw, 7rem);
+  font-weight: 900;
+  opacity: 0.06;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.logo {
+  color: #888;
+  margin-bottom: 1.5rem;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+.bar {
+  width: min(280px, 70vw);
+  height: 4px;
+  background: rgba(45, 42, 36, 0.12);
+  border-radius: 4px;
+  overflow: hidden;
+
+  span {
+    display: block;
+    height: 100%;
+    background: #ffd166;
+    border-radius: 4px;
+    transition: width 0.15s ease;
+  }
+}
+
+.percent {
+  margin-top: 0.75rem;
+  font-family: var(--font-mono, monospace);
+  font-size: 0.8rem;
+  color: #888;
+}

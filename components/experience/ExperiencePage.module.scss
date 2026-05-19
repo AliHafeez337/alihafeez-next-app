@@ -1,0 +1,28 @@
+.page {
+  min-height: 100vh;
+  background: #f5f0e8;
+  color: #2d2a24;
+}
+
+.scrollTrack {
+  position: relative;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.spacer {
+  height: 100vh;
+  pointer-events: none;
+}
+
+.noscript {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: #f5f0e8;
+  text-align: center;
+}
