@@ -27,14 +27,14 @@ export default function SiteFooter() {
       <span className={styles.footerSep} aria-hidden>
         ·
       </span>
-      {/* <a
+      <a
         href={CONTACT.whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
         className={styles.footerLink}
       >
         Chat on WhatsApp
-      </a> */}
+      </a>
     </nav>
   );
 }
