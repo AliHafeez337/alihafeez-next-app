@@ -11,6 +11,37 @@ const root = path.join(__dirname, '..');
 const meDir = path.join(root, 'Me');
 const outPath = path.join(root, 'data', 'knowledge-index.json');
 
+/** Next.js loads .env.local automatically; standalone Node scripts do not. */
+function loadEnvFile(filePath, { override = false } = {}) {
+  if (!fs.existsSync(filePath)) return;
+
+  const content = fs.readFileSync(filePath, 'utf-8');
+  for (const line of content.split(/\r?\n/)) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith('#')) continue;
+
+    const eq = trimmed.indexOf('=');
+    if (eq === -1) continue;
+
+    const key = trimmed.slice(0, eq).trim();
+    let value = trimmed.slice(eq + 1).trim();
+
+    if (
+      (value.startsWith('"') && value.endsWith('"')) ||
+      (value.startsWith("'") && value.endsWith("'"))
+    ) {
+      value = value.slice(1, -1);
+    }
+
+    if (override || process.env[key] === undefined) {
+      process.env[key] = value;
+    }
+  }
+}
+
+loadEnvFile(path.join(root, '.env'));
+loadEnvFile(path.join(root, '.env.local'), { override: true });
+
 async function embedChunks(chunks) {
   const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) {
@@ -18,8 +49,10 @@ async function embedChunks(chunks) {
     return chunks;
   }
 
+  const embeddingModel =
+    process.env.GEMINI_EMBEDDING_MODEL || 'gemini-embedding-001';
   const genAI = new GoogleGenerativeAI(apiKey);
-  const model = genAI.getGenerativeModel({ model: 'text-embedding-004' });
+  const model = genAI.getGenerativeModel({ model: embeddingModel });
 
   const withEmbeddings = [];
   const batchSize = 8;
